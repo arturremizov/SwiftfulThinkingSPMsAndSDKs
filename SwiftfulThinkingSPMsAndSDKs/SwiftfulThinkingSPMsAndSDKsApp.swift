@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftfulThinkingSPMsAndSDKsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SDWebImageBootcamp()
         }
     }
 }

@@ -11,6 +11,8 @@
 		AF8B98B82BEFCC4D00E7486D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B98B72BEFCC4D00E7486D /* ContentView.swift */; };
 		AF8B98BA2BEFCC4F00E7486D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8B98B92BEFCC4F00E7486D /* Assets.xcassets */; };
 		AF8B98BD2BEFCC4F00E7486D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8B98BC2BEFCC4F00E7486D /* Preview Assets.xcassets */; };
+		AF8B98C52BEFCDEE00E7486D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF8B98C42BEFCDEE00E7486D /* SDWebImageSwiftUI */; };
+		AF8B98C72BEFCE4D00E7486D /* SDWebImageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B98C62BEFCE4D00E7486D /* SDWebImageBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		AF8B98B72BEFCC4D00E7486D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF8B98B92BEFCC4F00E7486D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8B98BC2BEFCC4F00E7486D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF8B98C62BEFCE4D00E7486D /* SDWebImageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8B98C52BEFCDEE00E7486D /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				AF8B98B52BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKsApp.swift */,
 				AF8B98B72BEFCC4D00E7486D /* ContentView.swift */,
+				AF8B98C62BEFCE4D00E7486D /* SDWebImageBootcamp.swift */,
 				AF8B98B92BEFCC4F00E7486D /* Assets.xcassets */,
 				AF8B98BB2BEFCC4F00E7486D /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SwiftfulThinkingSPMsAndSDKs;
+			packageProductDependencies = (
+				AF8B98C42BEFCDEE00E7486D /* SDWebImageSwiftUI */,
+			);
 			productName = SwiftfulThinkingSPMsAndSDKs;
 			productReference = AF8B98B22BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKs.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = AF8B98A92BEFCC4D00E7486D;
+			packageReferences = (
+				AF8B98C32BEFCDEE00E7486D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = AF8B98B32BEFCC4D00E7486D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				AF8B98B82BEFCC4D00E7486D /* ContentView.swift in Sources */,
 				AF8B98B62BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKsApp.swift in Sources */,
+				AF8B98C72BEFCE4D00E7486D /* SDWebImageBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF8B98C32BEFCDEE00E7486D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF8B98C42BEFCDEE00E7486D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8B98C32BEFCDEE00E7486D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF8B98AA2BEFCC4D00E7486D /* Project object */;
 }
