@@ -8,21 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct ImageLoader: View {
-    let url: String
-    var contentMode: ContentMode = .fill
-    var body: some View {
-        Rectangle()
-            .opacity(0)
-            .overlay {
-                SDWebImageLoader(url: url, contentMode: contentMode)
-                    .allowsHitTesting(false)
-            }
-            .clipped()
-    }
-}
-
-fileprivate struct SDWebImageLoader: View {
+struct SDWebImageLoader: View {
     let url: String
     var contentMode: ContentMode = .fill
     var body: some View {
@@ -42,20 +28,6 @@ fileprivate struct SDWebImageLoader: View {
     }
 }
 
-final class ImagePrefetcher {
-    private let prefetcher: SDWebImagePrefetcher
-    init(prefetcher: SDWebImagePrefetcher = .init()) {
-        self.prefetcher = prefetcher
-    }
-    
-    func startPrefetching(urls: [URL]) {
-        prefetcher.prefetchURLs(urls)
-    }
-    
-    func stopPrefetching() {
-        prefetcher.cancelPrefetching()
-    }
-}
 
 struct SDWebImageBootcamp: View {
     var body: some View {
