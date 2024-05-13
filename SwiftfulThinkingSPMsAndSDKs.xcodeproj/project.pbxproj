@@ -17,6 +17,8 @@
 		AF8B98BD2BEFCC4F00E7486D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8B98BC2BEFCC4F00E7486D /* Preview Assets.xcassets */; };
 		AF8B98C52BEFCDEE00E7486D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF8B98C42BEFCDEE00E7486D /* SDWebImageSwiftUI */; };
 		AF8B98C72BEFCE4D00E7486D /* SDWebImageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B98C62BEFCE4D00E7486D /* SDWebImageBootcamp.swift */; };
+		AFBEB0192BF2738C0008BA28 /* KeychainSwiftBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEB0182BF2738C0008BA28 /* KeychainSwiftBootcamp.swift */; };
+		AFBEB01C2BF275BA0008BA28 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AFBEB01B2BF275BA0008BA28 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,7 @@
 		AF8B98B92BEFCC4F00E7486D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8B98BC2BEFCC4F00E7486D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF8B98C62BEFCE4D00E7486D /* SDWebImageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageBootcamp.swift; sourceTree = "<group>"; };
+		AFBEB0182BF2738C0008BA28 /* KeychainSwiftBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSwiftBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFBEB01C2BF275BA0008BA28 /* KeychainSwift in Frameworks */,
 				AF5DD9632BF12353009FC833 /* Kingfisher in Frameworks */,
 				AF8B98C52BEFCDEE00E7486D /* SDWebImageSwiftUI in Frameworks */,
 			);
@@ -92,6 +96,7 @@
 			children = (
 				AF8B98B52BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKsApp.swift */,
 				AF8B98B72BEFCC4D00E7486D /* ContentView.swift */,
+				AFBEB0172BF273260008BA28 /* Keychains */,
 				AF5DD9582BF121B0009FC833 /* ImageLoading */,
 				AF8B98B92BEFCC4F00E7486D /* Assets.xcassets */,
 				AF8B98BB2BEFCC4F00E7486D /* Preview Content */,
@@ -105,6 +110,14 @@
 				AF8B98BC2BEFCC4F00E7486D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFBEB0172BF273260008BA28 /* Keychains */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEB0182BF2738C0008BA28 /* KeychainSwiftBootcamp.swift */,
+			);
+			path = Keychains;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +139,7 @@
 			packageProductDependencies = (
 				AF8B98C42BEFCDEE00E7486D /* SDWebImageSwiftUI */,
 				AF5DD9622BF12353009FC833 /* Kingfisher */,
+				AFBEB01B2BF275BA0008BA28 /* KeychainSwift */,
 			);
 			productName = SwiftfulThinkingSPMsAndSDKs;
 			productReference = AF8B98B22BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKs.app */;
@@ -158,6 +172,7 @@
 			packageReferences = (
 				AF8B98C32BEFCDEE00E7486D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				AF5DD9612BF12353009FC833 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AFBEB01A2BF275BA0008BA28 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = AF8B98B32BEFCC4D00E7486D /* Products */;
 			projectDirPath = "";
@@ -188,6 +203,7 @@
 				AF8B98B82BEFCC4D00E7486D /* ContentView.swift in Sources */,
 				AF8B98B62BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKsApp.swift in Sources */,
 				AF5DD9602BF1230A009FC833 /* KingfisherBootcamp.swift in Sources */,
+				AFBEB0192BF2738C0008BA28 /* KeychainSwiftBootcamp.swift in Sources */,
 				AF5DD95A2BF121CB009FC833 /* ImageLoader.swift in Sources */,
 				AF5DD95C2BF1221A009FC833 /* ImagePrefetcher.swift in Sources */,
 				AF8B98C72BEFCE4D00E7486D /* SDWebImageBootcamp.swift in Sources */,
@@ -414,6 +430,14 @@
 				minimumVersion = 3.0.4;
 			};
 		};
+		AFBEB01A2BF275BA0008BA28 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -426,6 +450,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AF8B98C32BEFCDEE00E7486D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		AFBEB01B2BF275BA0008BA28 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFBEB01A2BF275BA0008BA28 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
