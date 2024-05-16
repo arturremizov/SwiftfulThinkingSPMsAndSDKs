@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF42969E2BF66D4200D63C9D /* SwiftfulUIBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF42969D2BF66D4200D63C9D /* SwiftfulUIBootcamp.swift */; };
+		AF4296A12BF66D5D00D63C9D /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF4296A02BF66D5D00D63C9D /* SwiftfulUI */; };
 		AF5DD95A2BF121CB009FC833 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5DD9592BF121CB009FC833 /* ImageLoader.swift */; };
 		AF5DD95C2BF1221A009FC833 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5DD95B2BF1221A009FC833 /* ImagePrefetcher.swift */; };
 		AF5DD9602BF1230A009FC833 /* KingfisherBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5DD95F2BF1230A009FC833 /* KingfisherBootcamp.swift */; };
@@ -22,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF42969D2BF66D4200D63C9D /* SwiftfulUIBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulUIBootcamp.swift; sourceTree = "<group>"; };
 		AF5DD9592BF121CB009FC833 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		AF5DD95B2BF1221A009FC833 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePrefetcher.swift; sourceTree = "<group>"; };
 		AF5DD95F2BF1230A009FC833 /* KingfisherBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingfisherBootcamp.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4296A12BF66D5D00D63C9D /* SwiftfulUI in Frameworks */,
 				AFBEB01C2BF275BA0008BA28 /* KeychainSwift in Frameworks */,
 				AF5DD9632BF12353009FC833 /* Kingfisher in Frameworks */,
 				AF8B98C52BEFCDEE00E7486D /* SDWebImageSwiftUI in Frameworks */,
@@ -48,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF42969C2BF66C5100D63C9D /* UIHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				AF42969D2BF66D4200D63C9D /* SwiftfulUIBootcamp.swift */,
+			);
+			path = UIHelpers;
+			sourceTree = "<group>";
+		};
 		AF5DD9582BF121B0009FC833 /* ImageLoading */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 			children = (
 				AF8B98B52BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKsApp.swift */,
 				AF8B98B72BEFCC4D00E7486D /* ContentView.swift */,
+				AF42969C2BF66C5100D63C9D /* UIHelpers */,
 				AFBEB0172BF273260008BA28 /* Keychains */,
 				AF5DD9582BF121B0009FC833 /* ImageLoading */,
 				AF8B98B92BEFCC4F00E7486D /* Assets.xcassets */,
@@ -140,6 +153,7 @@
 				AF8B98C42BEFCDEE00E7486D /* SDWebImageSwiftUI */,
 				AF5DD9622BF12353009FC833 /* Kingfisher */,
 				AFBEB01B2BF275BA0008BA28 /* KeychainSwift */,
+				AF4296A02BF66D5D00D63C9D /* SwiftfulUI */,
 			);
 			productName = SwiftfulThinkingSPMsAndSDKs;
 			productReference = AF8B98B22BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKs.app */;
@@ -173,6 +187,7 @@
 				AF8B98C32BEFCDEE00E7486D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				AF5DD9612BF12353009FC833 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				AFBEB01A2BF275BA0008BA28 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				AF42969F2BF66D5D00D63C9D /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
 			);
 			productRefGroup = AF8B98B32BEFCC4D00E7486D /* Products */;
 			projectDirPath = "";
@@ -202,6 +217,7 @@
 			files = (
 				AF8B98B82BEFCC4D00E7486D /* ContentView.swift in Sources */,
 				AF8B98B62BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKsApp.swift in Sources */,
+				AF42969E2BF66D4200D63C9D /* SwiftfulUIBootcamp.swift in Sources */,
 				AF5DD9602BF1230A009FC833 /* KingfisherBootcamp.swift in Sources */,
 				AFBEB0192BF2738C0008BA28 /* KeychainSwiftBootcamp.swift in Sources */,
 				AF5DD95A2BF121CB009FC833 /* ImageLoader.swift in Sources */,
@@ -414,6 +430,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AF42969F2BF66D5D00D63C9D /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		AF5DD9612BF12353009FC833 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -441,6 +465,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AF4296A02BF66D5D00D63C9D /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF42969F2BF66D5D00D63C9D /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
 		AF5DD9622BF12353009FC833 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AF5DD9612BF12353009FC833 /* XCRemoteSwiftPackageReference "Kingfisher" */;
