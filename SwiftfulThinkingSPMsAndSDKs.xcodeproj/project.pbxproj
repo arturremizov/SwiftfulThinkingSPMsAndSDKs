@@ -19,6 +19,8 @@
 		AF8B98BD2BEFCC4F00E7486D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8B98BC2BEFCC4F00E7486D /* Preview Assets.xcassets */; };
 		AF8B98C52BEFCDEE00E7486D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AF8B98C42BEFCDEE00E7486D /* SDWebImageSwiftUI */; };
 		AF8B98C72BEFCE4D00E7486D /* SDWebImageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B98C62BEFCE4D00E7486D /* SDWebImageBootcamp.swift */; };
+		AFA7236F2BF7B230008BD020 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = AFA7236E2BF7B230008BD020 /* SwiftfulRouting */; };
+		AFA723722BF7B2EF008BD020 /* SwiftfulRoutingBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA723712BF7B2EF008BD020 /* SwiftfulRoutingBootcamp.swift */; };
 		AFBEB0192BF2738C0008BA28 /* KeychainSwiftBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEB0182BF2738C0008BA28 /* KeychainSwiftBootcamp.swift */; };
 		AFBEB01C2BF275BA0008BA28 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AFBEB01B2BF275BA0008BA28 /* KeychainSwift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,7 @@
 		AF8B98B92BEFCC4F00E7486D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8B98BC2BEFCC4F00E7486D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AF8B98C62BEFCE4D00E7486D /* SDWebImageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageBootcamp.swift; sourceTree = "<group>"; };
+		AFA723712BF7B2EF008BD020 /* SwiftfulRoutingBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulRoutingBootcamp.swift; sourceTree = "<group>"; };
 		AFBEB0182BF2738C0008BA28 /* KeychainSwiftBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainSwiftBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +49,7 @@
 				AFBEB01C2BF275BA0008BA28 /* KeychainSwift in Frameworks */,
 				AF5DD9632BF12353009FC833 /* Kingfisher in Frameworks */,
 				AF8B98C52BEFCDEE00E7486D /* SDWebImageSwiftUI in Frameworks */,
+				AFA7236F2BF7B230008BD020 /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +112,7 @@
 			children = (
 				AF8B98B52BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKsApp.swift */,
 				AF8B98B72BEFCC4D00E7486D /* ContentView.swift */,
+				AFA723702BF7B2BA008BD020 /* Routing */,
 				AF42969C2BF66C5100D63C9D /* UIHelpers */,
 				AFBEB0172BF273260008BA28 /* Keychains */,
 				AF5DD9582BF121B0009FC833 /* ImageLoading */,
@@ -123,6 +128,14 @@
 				AF8B98BC2BEFCC4F00E7486D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFA723702BF7B2BA008BD020 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				AFA723712BF7B2EF008BD020 /* SwiftfulRoutingBootcamp.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		AFBEB0172BF273260008BA28 /* Keychains */ = {
@@ -154,6 +167,7 @@
 				AF5DD9622BF12353009FC833 /* Kingfisher */,
 				AFBEB01B2BF275BA0008BA28 /* KeychainSwift */,
 				AF4296A02BF66D5D00D63C9D /* SwiftfulUI */,
+				AFA7236E2BF7B230008BD020 /* SwiftfulRouting */,
 			);
 			productName = SwiftfulThinkingSPMsAndSDKs;
 			productReference = AF8B98B22BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKs.app */;
@@ -188,6 +202,7 @@
 				AF5DD9612BF12353009FC833 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				AFBEB01A2BF275BA0008BA28 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				AF42969F2BF66D5D00D63C9D /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				AFA7236D2BF7B230008BD020 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
 			);
 			productRefGroup = AF8B98B32BEFCC4D00E7486D /* Products */;
 			projectDirPath = "";
@@ -219,6 +234,7 @@
 				AF8B98B62BEFCC4D00E7486D /* SwiftfulThinkingSPMsAndSDKsApp.swift in Sources */,
 				AF42969E2BF66D4200D63C9D /* SwiftfulUIBootcamp.swift in Sources */,
 				AF5DD9602BF1230A009FC833 /* KingfisherBootcamp.swift in Sources */,
+				AFA723722BF7B2EF008BD020 /* SwiftfulRoutingBootcamp.swift in Sources */,
 				AFBEB0192BF2738C0008BA28 /* KeychainSwiftBootcamp.swift in Sources */,
 				AF5DD95A2BF121CB009FC833 /* ImageLoader.swift in Sources */,
 				AF5DD95C2BF1221A009FC833 /* ImagePrefetcher.swift in Sources */,
@@ -454,6 +470,14 @@
 				minimumVersion = 3.0.4;
 			};
 		};
+		AFA7236D2BF7B230008BD020 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.4;
+			};
+		};
 		AFBEB01A2BF275BA0008BA28 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
@@ -479,6 +503,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AF8B98C32BEFCDEE00E7486D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		AFA7236E2BF7B230008BD020 /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA7236D2BF7B230008BD020 /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
 		};
 		AFBEB01B2BF275BA0008BA28 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;

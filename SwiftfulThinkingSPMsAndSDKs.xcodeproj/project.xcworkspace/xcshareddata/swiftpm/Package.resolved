@@ -46,6 +46,15 @@
       }
     },
     {
+      "identity" : "swiftfulrouting",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftfulThinking/SwiftfulRouting.git",
+      "state" : {
+        "revision" : "c9c536b9e6bd99589ab9d41d2178e4ac0bd4fe2b",
+        "version" : "5.3.4"
+      }
+    },
+    {
       "identity" : "swiftfului",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SwiftfulThinking/SwiftfulUI.git",
